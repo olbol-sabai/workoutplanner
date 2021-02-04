@@ -1,0 +1,20 @@
+.Label {
+    font-size: 17px;
+    margin-right: 10px;
+    margin: 5px;
+}
+
+.FlexInput {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DualFlexInput {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 10fr 1fr 0.5fr 1fr 0.5fr;
+    margin: 10px;
+    justify-content: space-between;
+}

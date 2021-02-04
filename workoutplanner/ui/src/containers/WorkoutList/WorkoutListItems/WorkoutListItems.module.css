@@ -1,0 +1,35 @@
+.ListItem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+    height: fit-content;
+    background-color: rgb(241, 241, 241);
+}
+
+.ListItem:hover {
+    color: orangered;
+    
+}
+
+.Name {
+    margin: 0;
+    grid-column: 1 / span 3;
+}
+
+.Cycles {
+    font-size: 16px;
+}
+
+.Duration {
+    font-size: 16px;
+    margin-right: 2px;
+}
+
+.Count {
+    font-size: 16px;
+}

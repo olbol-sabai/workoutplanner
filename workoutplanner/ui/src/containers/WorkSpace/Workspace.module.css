@@ -1,0 +1,16 @@
+.Workspace {
+    border: solid #333 3px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
+}
+
+
+@media(max-width: 800px) {
+    .Workspace {
+        grid-column: 1 / span 2;
+        height: 75vh;
+    }
+}

@@ -1,0 +1,81 @@
+.SelectedWorkout {
+    width: 100%;
+    grid-column: 1 / span 2;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 70vh;
+}
+
+
+@media(max-width: 800px) {
+    .SelectedWorkout {
+        grid-column: 1 / span 2;
+        justify-content: center;
+    }
+}
+
+.WorkoutTitle {
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 4fr auto;
+    width: 100%;
+}
+
+.UL {
+    margin: 0px;
+    padding: 0px
+}
+
+.SelectedControls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.EditWorkoutForm {
+    margin: 25px 0;
+}
+
+
+.WorkoutIcon {
+    justify-self: right;
+    margin-right: 5px;
+    height: fit-content;
+    align-self: center;
+}
+
+.WorkoutH1 {
+    justify-self: center;
+}
+
+.Confirm {
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+}
+
+.Draggable {
+    display: grid;
+    gap: 3px;
+    height: 100%;
+    margin-bottom: 3px;
+    grid-template-columns: 6fr 1fr;
+}
+
+.Button {
+    position: relative;
+    height: max-content;
+    width: 100%;
+}
+
+.ButtonAbs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+}

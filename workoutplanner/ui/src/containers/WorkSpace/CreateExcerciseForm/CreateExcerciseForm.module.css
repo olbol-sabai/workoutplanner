@@ -1,0 +1,21 @@
+.Exercise {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: auto;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, auto);
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-height: 600px) {
+    .Exercise {
+        height: 90%;
+    }
+}
+
+.Buttons {
+    width: 100%;
+    margin: 20px 0px;
+}

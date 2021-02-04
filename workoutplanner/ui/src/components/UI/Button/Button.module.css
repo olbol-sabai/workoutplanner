@@ -1,0 +1,21 @@
+.Button {
+    padding: 4px 10px;
+    letter-spacing: 1px;
+    border-radius: 0;
+    border: none;
+    margin: 2px
+}
+
+.Button:active,
+.Button:focus {
+    outline: none;
+    border: none;
+}
+
+.Button:active {
+    transform: scale(0.99);
+}
+
+.Button:hover {
+    color: orangered;
+}

@@ -1,0 +1,8 @@
+.Button {
+    border: none;
+    padding: 0.5rem;
+}
+
+.Button:focus {
+    outline: none
+}

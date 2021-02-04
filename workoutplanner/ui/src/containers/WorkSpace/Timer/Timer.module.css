@@ -1,0 +1,12 @@
+.TimerContainer {
+    width: 100%;
+    min-width: 280px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,  1fr));
+    grid-auto-columns: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
