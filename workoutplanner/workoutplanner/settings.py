@@ -13,16 +13,22 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from apiconf.main import *
 from pathlib import Path
 import os
+from dotenv import load_dotenv
+
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-SECRET_KEY = '=r0iqvt3o^^4#w^)x$p^(-^2+0z=a_013!=&#m4(m5hw4s*w$g'
 
 DEBUG = True
 
 ALLOWED_HOSTS = []
 
+
+load_dotenv()
+
+
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 INSTALLED_APPS = [
     ##3rd party
@@ -129,8 +135,8 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'server-static-files')
 
 
 # AWS CONFIG
-AWS_ACCESS_KEY_ID = 'AKIAXOE6JCN3V4UBEPKQ'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
 AWS_STORAGE_BUCKET_NAME = 'omwdevs-workoutplanner'
 AWS_S3_CUSTOM_DOMAIN = 'omwdevs-workoutplanner.s3.amazonaws.com'
 AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
